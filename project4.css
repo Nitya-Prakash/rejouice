@@ -1,0 +1,875 @@
+@font-face {
+  font-family: nb;
+  src: url(./NBInternationalProBoo.woff2);
+}
+
+@font-face {
+  font-family: rj;
+  src: url(./Rejouice-Headline.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nb;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Loader CSS */
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #0e0e0e;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 7px;
+  user-select: none;
+}
+
+.loader h3 {
+  font-size: 1.7vw;
+  font-weight: 400;
+}
+
+/* page1, cursor and navbar CSS */
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #dadada;
+  position: relative;
+}
+
+.cursor {
+  height: 7.3vw;
+  width: 7.3vw;
+  background-color: #ff5f38;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+.cursor h5 {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.page1-content {
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-bottom: 5vw; */
+}
+
+nav {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw;
+}
+
+nav h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+nav h4 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.page1-content h1 {
+  font-family: rj;
+  font-size: 27vw;
+  font-weight: 100;
+  line-height: 27vw;
+  user-select: none;
+}
+
+.page1-content h1 span {
+  font-family: rj;
+  display: inline-block;
+}
+
+/* Page2 CSS */
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+  padding: 4vw 3vw;
+}
+
+.page2-head {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page2-left-head {
+  height: 100%;
+  width: 26%;
+}
+
+.page2-left-head1 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.page2-left-head1 h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page2-left-head2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.page2-left-head2 h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page2-right-head {
+  height: 100%;
+  width: 18%;
+}
+
+.page2-head-cont {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  user-select: none;
+}
+
+.page2-head-cont h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page2-head-border {
+  height: 1px;
+  width: 100%;
+  background-color: #9a9a9a;
+  margin-top: 1vw;
+}
+
+.page2-container {
+  height: 88vh;
+  width: 100%;
+}
+
+.page2-container-elem {
+  height: 11%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  user-select: none;
+}
+
+.page2-container-elem h1 {
+  font-size: 4vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page2-container-elem:nth-child(1) {
+  justify-content: flex-end;
+}
+
+/* Page3 CSS */
+
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+  position: relative;
+  padding: 3vw;
+}
+
+.page3-top {
+  text-align: center;
+}
+
+.page3-top-box {
+  overflow: hidden;
+}
+
+.page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.page3-top h4 span {
+  font-size: 0.7vw;
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.page3-top h2 {
+  font-size: 4.2vw;
+  font-weight: 500;
+  user-select: none;
+}
+
+.page3-top h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.page3-contents {
+  margin-top: 27vh;
+}
+
+.page3-contents-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page3-contents-head h2 {
+  font-weight: 400;
+  margin-bottom: 2vh;
+  cursor: pointer;
+}
+
+.page3-elems {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 100%;
+  width: 32.6%;
+  cursor: pointer;
+  position: relative;
+}
+
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  transition: all ease 0.8s;
+}
+
+.box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box:hover img {
+  opacity: 0;
+}
+
+/* Page4 CSS */
+
+.page4 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #faf8f3;
+  padding: 4vw 3vw;
+}
+
+.page4-head {
+  height: 11vh;
+  width: 100%;
+}
+
+.page4-left-head {
+  height: 100%;
+  width: 30%;
+}
+
+.page4-left-head1 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.page4-left-head1 h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page4-left-head2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.page4-left-head2 h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page4-head-border {
+  height: 1px;
+  width: 100%;
+  background-color: #9a9a9a;
+  margin-top: 1vw;
+}
+
+.page4-container {
+  width: 100%;
+  margin-bottom: 3vw;
+}
+
+.page4-container-elem {
+  height: 11%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  user-select: none;
+}
+
+.page4-container-elem h1 {
+  font-size: 4vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page4-container-elem:nth-child(1) {
+  justify-content: flex-end;
+}
+
+.page4-elements {
+  width: 100%;
+  /* height: 80vh; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .page4-cursor{
+    height: 7.3vw;
+    width: 7.3vw;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.page4-cursor h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: white;
+} */
+
+.page4-elements video {
+  height: 100%;
+  width: 70%;
+}
+
+.page4-elements svg {
+  position: absolute;
+  height: 40%;
+}
+
+/* Page5 CSS */
+
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+  padding: 4vw 3vw;
+  position: relative;
+}
+
+.page5-head {
+  height: 11vh;
+  width: 100%;
+}
+
+.page5-left-head {
+  height: 100%;
+  width: 30%;
+}
+
+.page5-left-head1 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.page5-left-head1 h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page5-left-head2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.page5-left-head2 h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  cursor: text;
+}
+
+.page5-head-border {
+  height: 1px;
+  width: 100%;
+  background-color: #9a9a9a;
+  margin-top: 1vw;
+}
+
+.page5-container {
+  width: 100%;
+  margin-bottom: 3vw;
+}
+
+.page5-container-elem {
+  height: 11%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  user-select: none;
+}
+
+.page5-container-elem h1 {
+  font-size: 4vw;
+  font-weight: 400;
+  cursor: text;
+}
+
+.page5-container-elem:nth-child(1) {
+  justify-content: center;
+}
+
+.page5-top {
+  min-height: 100vh;
+  width: 100%;
+  /* border: 2px solid red; */
+  padding: 7vw 0vw 0vw 0vw;
+}
+
+.page5-top-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.page5-left-head3 {
+  width: 60%;
+}
+
+.page5-left-head3 h1 {
+  font-size: 9vw;
+  font-weight: 400;
+  font-family: rj;
+}
+
+.page5-right-head {
+  height: 17vh;
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.page5-right-head i {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.page5-right-head h2 {
+  font-weight: 400;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.swiper-div {
+  height: 60vh;
+  width: 100%;
+  margin-top: -7.5%;
+  margin-left: -4%;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 130%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 19%;
+  object-fit: cover;
+}
+
+.page5-bottom {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page5-bottom h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.page5-bottom-box {
+  overflow: hidden;
+}
+
+.page5-bottom-box h2 {
+  font-size: 4.2vw;
+  font-weight: 500;
+  user-select: none;
+}
+
+.page5-bottom-box h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Page6 CSS */
+
+.page6 {
+  height: 100vh;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+
+.page6-top {
+  height: 30%;
+  width: 100%;
+  /* border-bottom: 2px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page6-top-left {
+  height: 100%;
+  width: 25%;
+  /* background-color: red; */
+  padding: 3vw 3vw;
+  color: white;
+}
+
+.page6-top-left h2 {
+  font-weight: 500;
+  font-size: 1.8vw;
+}
+
+.page6-top-left button {
+  margin-top: 2vw;
+  padding: 1.1vw 1.5vw;
+  border-radius: 10px;
+  background-color: #0e0e0e;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.1vw;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+
+.page6-top-left button:hover {
+  background-color: white;
+  color: black;
+}
+
+.page6-top-right {
+  height: 100%;
+  width: 30%;
+  display: flex;
+}
+
+.page6-top-right-1 {
+  height: 100%;
+  width: 50%;
+  padding: 2.2vw 1.7vw;
+}
+
+.page6-top-right-1 h4 {
+  font-weight: 100;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+}
+
+.page6-top-right-1 h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.page6-top-right-2 {
+  height: 100%;
+  width: 50%;
+  padding: 2.2vw 1.7vw 2.2vw 3.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page6-top-right-2 h4 {
+  font-weight: 100;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+}
+
+.page6-top-right-2 h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.page6-top-right-2 h4 a i {
+  font-weight: 300;
+}
+
+.page6-mid {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page6-mid-left {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 3vw 3vw;
+}
+
+.page6-mid-left h4 {
+  color: white;
+  font-weight: 100;
+  font-size: 1.1vw;
+}
+
+.page6-mid-right {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  padding: 3vw 1.65vw;
+}
+
+.page6-mid-right-1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.page6-mid-right-1 h4 {
+  font-weight: 100;
+}
+
+.page6-mid-right-1 h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.page6-mid-right-2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 3.5vw;
+}
+
+.page6-mid-right-2 h4 {
+  font-weight: 100;
+}
+
+.page6-mid-right-2 h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.page6-bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page6-bottom h1 {
+  font-family: rj;
+  font-size: 27vw;
+  font-weight: 100;
+  line-height: 24vw;
+  user-select: none;
+  color: white;
+}
+
+.page6-bottom h1 span {
+  font-family: rj;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .loader {
+    gap: 9px;
+  }
+
+  .loader h3 {
+    font-size: 5vw;
+  }
+
+  .page1 {
+    height: 90vh;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .page1 video {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  nav {
+    padding: 6vw 3vw 0 3vw;
+  }
+
+  nav h3 {
+    font-size: 4.8vw;
+  }
+  
+  nav h4 {
+    font-size: 4.8vw;
+    border: 1px solid #fff;
+    padding: 2vw 4vw;
+    border-radius: 30px;
+  }
+
+  .page1-content h1 {
+    font-size: 28vw;
+  }
+
+  .page2-head {
+    height: 6vh;
+  }
+
+  .page2-left-head {
+    height: 100%;
+    width: 70%;
+  }
+
+  .page2-left-head1 h3 {
+    font-size: 4.6vw;
+  }
+}
