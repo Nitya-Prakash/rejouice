@@ -4,6 +4,7 @@ function locomotiveanim() {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true,
+    smoothMobile: true
   });
 
   locoScroll.on("scroll", ScrollTrigger.update);
@@ -106,7 +107,6 @@ function page2anim() {
     scrollTrigger: {
       trigger: ".page2",
       scroller: ".main",
-      // markers: true,
       start: "top 85%",
       end: "top 68%",
       scrub: 2,
@@ -117,7 +117,6 @@ function page2anim() {
     scrollTrigger: {
       trigger: ".page2",
       scroller: ".main",
-      // markers: true,
       start: "top 78%",
       end: "top 62%",
       scrub: 2,
@@ -342,10 +341,10 @@ function page5bottomanim() {
 function page6headanim() {
   var tl8 = gsap.timeline({
     scrollTrigger: {
-      trigger: ".page6-bottom",
+      trigger: ".page6-mid",
       scroller: ".main",
       start: "top 85%",
-      end: "top 68%",
+      end: "top 73%",
       scrub: 4,
     },
   });
